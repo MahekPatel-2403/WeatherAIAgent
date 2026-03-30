@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather AI Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather AI Agent</h1>
+      <p class="subtitle">Ask about any place — find its info and current weather.</p>
+    </header>
+
+    <main>
+      <div class="control-row">
+        <input id="queryInput" type="text" placeholder="e.g. 'weather in London' or 'capital of Madhya Pradesh'" />
+        <button id="searchBtn" class="primary">Search</button>
+      </div>
+
+      <div class="quick">
+        <button class="chip" data-q="weather in New York">New York</button>
+        <button class="chip" data-q="weather in Tokyo">Tokyo</button>
+        <button class="chip" data-q="capital of Maharashtra">Maharashtra (capital)</button>
+      </div>
+
+      <section class="results">
+        <div class="card console-card">
+          <h3>Agent Console</h3>
+          <div id="agentConsole" class="console">—</div>
+        </div>
+        <div class="card">
+          <h3>Search Result</h3>
+          <pre id="searchResult">—</pre>
+        </div>
+        <div class="card">
+          <h3>Place</h3>
+          <div id="place">—</div>
+          <h3>Weather</h3>
+          <pre id="weatherResult">—</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Built with ❤️ — local DuckDuckGo + Weatherstack</small>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
