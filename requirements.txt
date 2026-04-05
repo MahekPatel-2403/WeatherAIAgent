@@ -1,6 +1,8 @@
 flask
-ddgs
-langchain
-langchain-huggingface
-python-dotenv
 requests
+python-dotenv
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+huggingface-hub
