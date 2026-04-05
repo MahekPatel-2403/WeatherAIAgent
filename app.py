@@ -124,12 +124,8 @@ def api_query():
     return jsonify(result)
 
 
-if __name__ == '__main__':
-    # If run with command-line args, behave like before for quick tests
-    if len(sys.argv) > 1:
-        user_query = ' '.join(sys.argv[1:])
-        out = search_and_fetch(user_query)
-        print(out)
-    else:
-        port = int(os.environ.get("PORT", 10000))
-        app.run(host='0.0.0.0', port=port)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    print(f"Starting server on port {port}...")
+
+    app.run(host="0.0.0.0", port=port)
