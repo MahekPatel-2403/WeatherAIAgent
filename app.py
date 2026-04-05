@@ -131,4 +131,5 @@ if __name__ == '__main__':
         out = search_and_fetch(user_query)
         print(out)
     else:
-        app.run(host='127.0.0.1', port=7860, debug=True)
+        port = int(os.environ.get("PORT", 10000))
+        app.run(host='0.0.0.0', port=port)
