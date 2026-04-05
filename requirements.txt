@@ -6,3 +6,5 @@ langchain-core
 langchain-community
 langchain-huggingface
 huggingface-hub
+ddgs
+duckduckgo-search
